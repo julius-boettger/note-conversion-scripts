@@ -1,0 +1,3 @@
+[submodule "colornote-to-json/ColorNote-backup-decryptor"]
+	path = colornote-to-json/ColorNote-backup-decryptor
+	url = https://github.com/olejorgenb/ColorNote-backup-decryptor.git
