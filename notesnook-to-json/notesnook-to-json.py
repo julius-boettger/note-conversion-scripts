@@ -24,6 +24,10 @@ def extract_content(filecontent: str) -> str:
 
 notes = []
 for file in pathlib.Path(EXTRACT_PATH).iterdir():
+    if file.is_dir():
+        print(f'ignoring notebook "{file.name}"...')
+        continue
+
     filecontent = file.read_text()
     notes.append({
         "title": extract_title(filecontent),
